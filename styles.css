@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.game {
+    background-color: #222;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-over {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    /*top: 200px;*/
+    width: 250px;
+    height: 300px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#you-won {
+    width: 160px;
+}
+
+#you-lose {
+    width: 160px;
+}
+
+#restart {
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1.5;
+    border: 1px solid #6198d8;
+    border-radius: 4px;
+    text-align: center;
+    transition: .1s ease-in-out;
+}
+
